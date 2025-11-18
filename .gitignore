@@ -1,0 +1,46 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Build
+dist/
+*.js
+*.js.map
+*.d.ts
+*.d.ts.map
+!config/**/*.js
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Data
+.containers/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary
+tmp/
+temp/
+
+backups/*
+!backups/.gitkeep

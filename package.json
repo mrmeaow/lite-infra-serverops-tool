@@ -1,0 +1,33 @@
+{
+  "name": "lite-infra-cli",
+  "version": "1.0.0",
+  "description": "Lite Infra. Environments Manager for local/cloud-VPS serverops",
+  "type": "module",
+  "main": "dist/cli.js",
+  "bin": {
+    "lite-infra": "dist/cli.js"
+  },
+  "scripts": {
+    "lite": "node --import tsx src/cli.ts",
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "clean": "rimraf dist",
+    "typechek": "tsc --noEmit",
+    "prebuild": "pnpm clean && pnpm typechek"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-spinners": "^2.9.1",
+    "dotenv": "^17.2.3",
+    "enquirer": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "rimraf": "^6.1.0",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=20.x"
+  }
+}
