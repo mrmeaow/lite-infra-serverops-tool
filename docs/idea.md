@@ -11,6 +11,7 @@
 - Mailpit (aka local email testing SMTP, standalone)
 
 > By default auto-selecteds are:
+>
 > - Portainer CE with its agent
 > - Redis
 
@@ -24,7 +25,6 @@
 - MinIO UI `9010` and console `9011`
 - Mailpt UI `8025` and SMTP `1025`
 
-
 > Note: ports like 3000,9000,8080, etc. are not available for external exposure allocation.
 
 ## Guidlines
@@ -36,6 +36,3 @@
 - Signoz APM => stack (docker compose) picked from its github repo
 - MinIO => standalone container
 - Mailpit => standalone container
-
-
-

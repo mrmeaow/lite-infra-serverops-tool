@@ -15,7 +15,6 @@ const config = {
   ],
 };
 
-
 try {
   const result = rs.initiate(config);
   console.log("✅ Replica set initiated");
